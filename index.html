@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="header">
+      <span class="header-text"><b>NVUTI</b></span>
+    </div>
+    <nav>
+      <div class="menu">
+        <div class="home"><a href="home.html">Главная</a></div>
+        <div class="fair_game"><a href="home.html">Честная игра</a></div>
+        <div class="faq"><a href="home.html">FAQ</a></div>
+        <div class="contacts"><a href="home.html">Контакты</a></div>
+        <div class="pay"><a href="home.html">Выплаты</a></div>
+      </div>
+    </nav>
+    <div class="main-content">
+      <div class="game">
+        <div class="count"></div>
+        <button class="lesser">Меньше</button>
+        <input autocomplete="off" id="BetSize" onkeyup="validateBetSizeD(this);updateProfit()" class="bet" value="1">
+        <button class="bigger">Больше</button>
+        <div class="range-lesser">0-999</div>
+        <div class="range-bigger">1000-1999</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
